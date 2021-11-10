@@ -8,30 +8,102 @@
     <title>Jakub Hajduk</title>
   </head>
   <body>
-    <header className="header__container">
-      <span className="name">Jakub Hajduk</span>
-      <nav className="navbar"><ul class="header__links">
-      <li class="header__link-wrapper">
-        <a href="./" class="header__link"> Home </a>
-      </li>
-      <li class="header__link-wrapper">
-        <a href="./#about" class="header__link">About </a>
-      </li>
-      <li class="header__link-wrapper">
-        <a href="./#projects" class="header__link"> Projects </a>
-      </li>
-      <li class="header__link-wrapper">
-        <a href="./#contact" class="header__link"> Contact </a>
-      </li>
-    </ul></nav>
+    <!-- header -->
+    <header class="header__container">
+      <span class="name">Jakub Hajduk</span>
+      <nav class="navbar">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./#home" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./#about" class="header__link"> About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./#projects" class="header__link"> Projects </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./#contact" class="header__link"> Contact </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="home">
+    <!-- home -->
+    <section class="home" id="home">
       <div class="home__content">
         <h1>Hi, I'm Jakub</h1>
         <p>A future Front-end developer and programmer with pasion for creating unusual websites</p>
-        <a href="./#projects">Projects</a>
+        <a href="./#projects" >Projects</a>
       </div>
     </section>
+
+    <!-- about -->
+    <section class="about" id="about"> 
+      <div class="about__content">
+        <h1 class="about__header">About me</h1>
+        <div class="about__main">
+          <h3 class="about__title">Get to know me!</h3>
+          <p class="about__main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum praesentium tenetur ea, dolorem iusto, molestiae tempora error aspernatur quidem enim veniam nam? Voluptatum repellat quidem consequuntur fugiat necessitatibus ad nobis!</p>
+        </div>
+        <div class="about__skills">
+          <h3 class="about-title">My skils</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">SCSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">React</div>
+            <div class="skills__skill">Github</div>
+            <!-- <div class="skills__skill">Gatsby</div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="projects" id="projects">
+      <div class="projects__container">
+        <h2 class="projects__header">
+          <span class="projects__title">Projects</span> <br />
+          <span class="projects_subtitle">Here You will find list of my projects with direct links to the sites or github</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__project">
+            <img src="/start_page2.jpg" alt="">
+            <div class="project__description">
+              <h2 class="project__name">Great car dealer</h2>
+              <p class="project__text">E-commerce website for a car dealer. <strong>WIP</strong><br /> <a href="" class="project__link">Learn more</a></p>
+            </div>
+          </div>
+          <div class="projects__project">
+            <img src="/start_page3.jpg" alt="">
+            <div class="project__description">
+              <h2 class="project__name">Make-up by Julia Daszkowska</h2>
+              <p class="project__text">Bussines site for beginner make-up artist. <strong>TO DO</strong><br /> <a href="" class="project__link">Learn more</a></p>
+            </div>
+          </div>
+          <div class="projects__project">
+            <img src="start_page4.jpg" alt="">
+            <div class="project__description">
+              <h2 class="project__name">Alternative portfolio website</h2>
+              <p class="project__text">Portfolio website with similar content but presented in unusual form. <strong>WIP</strong><br /> <a href="" class="project__link">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <form action="https://formsubmit.co/k.hajduk.kh@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New submission!">
+        <input class="input__name" type="text" name="name" placeholder="Submit your name " required> <br />
+        <input class="input__email" type="email" name="email" placeholder="Submit Your email" required> <br />
+        <input class="input__message" type="text" name="message" placeholder="Submit Your message"> <br />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer><p>Made by Jakub Hajduk <br />Images from <a href="https://unsplash.com" target="blank">unsplash.com</a></p></footer>
   </body>
 </html>
