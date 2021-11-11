@@ -95,11 +95,15 @@
     </section>
 
     <section class="contact" id="contact">
+      <h1>Contact Form</h1>
       <form action="https://formsubmit.co/k.hajduk.kh@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New submission!">
+        <label for="name">Name</label>
         <input class="input__name" type="text" name="name" placeholder="Submit your name " required> <br />
+        <label for="email">Email</label>
         <input class="input__email" type="email" name="email" placeholder="Submit Your email" required> <br />
-        <input class="input__message" type="text" name="message" placeholder="Submit Your message"> <br />
+        <label for="message">Message</label>
+        <textarea class="input__message" type="text" name="message" placeholder="Submit Your message"></textarea> <br />
         <button type="submit">Send</button>
       </form>
     </section>
