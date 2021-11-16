@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image" href="icon.jpg" /> -->
+    <link rel="icon" type="image" href="icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css">
     <title>Jakub Hajduk</title>
@@ -69,36 +69,44 @@
       <div class="projects__container">
         <h2 class="projects__header">
           <span class="projects__title">Projects</span> <br />
-          <span class="projects_subtitle">Here You will find list of my projects with direct links to the sites or github repos</span>
+          <span class="projects_subtitle">Here You will find list of my projects with direct links to the sites or github repos. <p style="font-size: 90%; font-weight: 300;">(You can click on the first image to see the video showing this project)</p></span>
         </h2>
         <div class="projects__content">
           <div class="projects__project">
-            <img src="/start_page2.jpg" alt="">
+            <img src="Products page.png" alt="" id="img1">
+            <iframe id="vid1" class="appear" src="https://www.youtube.com/embed/TxAY2WUuLlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="project__description">
               <h2 class="project__name">Great car dealer</h2>
-              <p class="project__text">E-commerce website for a car dealer. <strong>WIP</strong><br /> <a href="https://github.com/EmFor2001/Portfolio-Shop" target="blank" class="project__link">Learn more</a></p>
+              <p class="project__text">E-commerce website for a car dealer. <strong>Almost Done</strong><br /> <a href="https://github.com/EmFor2001/Portfolio-Shop" target="blank" class="project__link">Learn more</a></p>
             </div>
           </div>
           <div class="projects__project">
-            <img src="start_page4.jpg" alt="">
+            <img src="ThreeJS-portfolio.png" alt="">
             <div class="project__description">
               <h2 class="project__name">Alternative portfolio website</h2>
               <p class="project__text">Portfolio website with similar content but presented in unusual form. <strong>WIP</strong><br /> <a href="" target="blank" class="project__link">Learn more</a></p>
             </div>
           </div>
           <div class="projects__project">
-            <img src="/start_page3.jpg" alt="">
+            <img src="JuliaDaszkowskaMakeup.png" alt="">
             <div class="project__description">
               <h2 class="project__name">Make-up by Julia Daszkowska</h2>
-              <p class="project__text">Bussines/portfolio site for beginner make-up artist. <strong>TO DO</strong><br /> <a href=""  target="blank" class="project__link">Learn more</a></p>
+              <p class="project__text">Bussines/portfolio site for beginner make-up artist. <strong>Just started - WIP</strong><br /> <a href=""  target="blank" class="project__link">Learn more</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <script type="text/javascript">
+      document.querySelector('#img1').addEventListener('click', () => {
+        document.querySelector('#img1').classList.add('appear');
+        document.querySelector('#vid1').classList.remove('appear');
+      }); 
+    </script>
+
     <section class="contact" id="contact">
-      <h1>Contact Form</h1>
+      <h1>Contact Form <p>It works so feel free to use it</p> </h1>
       <form action="https://formsubmit.co/k.hajduk.kh@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New submission!">
         <label for="name">Name</label>
