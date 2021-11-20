@@ -66,10 +66,6 @@ footer {
     border-bottom: 4px solid $green-theme;
 }
 
-.name{
-    padding-left: 3rem;
-}
-
 .header__links{
     text-transform: uppercase;
     display: flex;
@@ -352,7 +348,7 @@ footer {
         padding-left: 0;
 
         nav{
-            font-size: 90%;
+            font-size: 80%;
             justify-content: space-around;
         }
     }
